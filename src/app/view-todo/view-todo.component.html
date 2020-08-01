@@ -1,0 +1,13 @@
+<mat-card fxFlex="100">
+  <mat-card-title>View Todo</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <div mat-subheader>Todo List</div>
+      <mat-list-item *ngFor="let todo of todos">
+        <mat-icon mat-list-icon>dns</mat-icon>
+        <div mat-line>{{todo.title}}</div>
+        <div mat-line> {{todo.description}} </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
